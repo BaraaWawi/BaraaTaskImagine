@@ -16,6 +16,20 @@
 		0843C2772C2F0705000CD9EF /* BaraaTaskImagineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2762C2F0705000CD9EF /* BaraaTaskImagineTests.swift */; };
 		0843C2812C2F0705000CD9EF /* BaraaTaskImagineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2802C2F0705000CD9EF /* BaraaTaskImagineUITests.swift */; };
 		0843C2832C2F0705000CD9EF /* BaraaTaskImagineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2822C2F0705000CD9EF /* BaraaTaskImagineUITestsLaunchTests.swift */; };
+		0843C2952C2F141F000CD9EF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2942C2F141F000CD9EF /* NetworkManager.swift */; };
+		0843C2972C2F1653000CD9EF /* HomeTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2962C2F1653000CD9EF /* HomeTabBarVC.swift */; };
+		0843C2992C2F18B9000CD9EF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2982C2F18B9000CD9EF /* HomeVC.swift */; };
+		0843C29C2C2F2C66000CD9EF /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C29B2C2F2C66000CD9EF /* StoryboardName.swift */; };
+		0843C29E2C2F3162000CD9EF /* FavouritsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C29D2C2F3162000CD9EF /* FavouritsVC.swift */; };
+		0843C2A02C2F3E4D000CD9EF /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C29F2C2F3E4D000CD9EF /* ItemsModel.swift */; };
+		0843C2A22C2F5422000CD9EF /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2A12C2F5422000CD9EF /* NetworkConstants.swift */; };
+		0843C2A42C2F5A41000CD9EF /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2A32C2F5A41000CD9EF /* ItemsViewModel.swift */; };
+		0843C2A92C2F776F000CD9EF /* ItemsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2A72C2F776F000CD9EF /* ItemsListTableViewCell.swift */; };
+		0843C2AA2C2F776F000CD9EF /* ItemsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843C2A82C2F776F000CD9EF /* ItemsListTableViewCell.xib */; };
+		0843C2AE2C2F86B2000CD9EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2AD2C2F86B2000CD9EF /* Extensions.swift */; };
+		876FCD2A98C79C2C8ECAABC8 /* libPods-BaraaTaskImagineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80BA0A5C82D1DD3DDD5BEE /* libPods-BaraaTaskImagineTests.a */; };
+		A16CF2CC54DBD08D932AE9C4 /* libPods-BaraaTaskImagine-BaraaTaskImagineUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589DE82A9427C59AB7823CEE /* libPods-BaraaTaskImagine-BaraaTaskImagineUITests.a */; };
+		E4789EA2435A99EF030F3D28 /* libPods-BaraaTaskImagine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F8B46B9164581CCF0967B1 /* libPods-BaraaTaskImagine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,26 @@
 		0843C27C2C2F0705000CD9EF /* BaraaTaskImagineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaraaTaskImagineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0843C2802C2F0705000CD9EF /* BaraaTaskImagineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaraaTaskImagineUITests.swift; sourceTree = "<group>"; };
 		0843C2822C2F0705000CD9EF /* BaraaTaskImagineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaraaTaskImagineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0843C2942C2F141F000CD9EF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0843C2962C2F1653000CD9EF /* HomeTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarVC.swift; sourceTree = "<group>"; };
+		0843C2982C2F18B9000CD9EF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0843C29B2C2F2C66000CD9EF /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		0843C29D2C2F3162000CD9EF /* FavouritsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritsVC.swift; sourceTree = "<group>"; };
+		0843C29F2C2F3E4D000CD9EF /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
+		0843C2A12C2F5422000CD9EF /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		0843C2A32C2F5A41000CD9EF /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		0843C2A72C2F776F000CD9EF /* ItemsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListTableViewCell.swift; sourceTree = "<group>"; };
+		0843C2A82C2F776F000CD9EF /* ItemsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsListTableViewCell.xib; sourceTree = "<group>"; };
+		0843C2AD2C2F86B2000CD9EF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		08F106427520BA023B7656B1 /* Pods-BaraaTaskImagineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagineTests.debug.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagineTests/Pods-BaraaTaskImagineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49F8B46B9164581CCF0967B1 /* libPods-BaraaTaskImagine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaraaTaskImagine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D80BA0A5C82D1DD3DDD5BEE /* libPods-BaraaTaskImagineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaraaTaskImagineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		589DE82A9427C59AB7823CEE /* libPods-BaraaTaskImagine-BaraaTaskImagineUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaraaTaskImagine-BaraaTaskImagineUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68715988189E4C21AD57E8AD /* Pods-BaraaTaskImagine-BaraaTaskImagineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagine-BaraaTaskImagineUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagine-BaraaTaskImagineUITests/Pods-BaraaTaskImagine-BaraaTaskImagineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2047D9D91D1717F83D3424 /* Pods-BaraaTaskImagine-BaraaTaskImagineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagine-BaraaTaskImagineUITests.release.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagine-BaraaTaskImagineUITests/Pods-BaraaTaskImagine-BaraaTaskImagineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFDA4167E69AF8CC489C78A5 /* Pods-BaraaTaskImagineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagineTests.release.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagineTests/Pods-BaraaTaskImagineTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED56937626654CB68BE263E9 /* Pods-BaraaTaskImagine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagine.debug.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagine/Pods-BaraaTaskImagine.debug.xcconfig"; sourceTree = "<group>"; };
+		FD6D4ADD7CEDA954879B0993 /* Pods-BaraaTaskImagine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagine.release.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagine/Pods-BaraaTaskImagine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4789EA2435A99EF030F3D28 /* libPods-BaraaTaskImagine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876FCD2A98C79C2C8ECAABC8 /* libPods-BaraaTaskImagineTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16CF2CC54DBD08D932AE9C4 /* libPods-BaraaTaskImagine-BaraaTaskImagineUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,8 @@
 				0843C2752C2F0705000CD9EF /* BaraaTaskImagineTests */,
 				0843C27F2C2F0705000CD9EF /* BaraaTaskImagineUITests */,
 				0843C25D2C2F0704000CD9EF /* Products */,
+				833A738D959C6A1E009E25AE /* Pods */,
+				33957CDABCD12DA26EDEE5ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +141,14 @@
 				0843C25F2C2F0704000CD9EF /* AppDelegate.swift */,
 				0843C2612C2F0704000CD9EF /* SceneDelegate.swift */,
 				0843C2632C2F0704000CD9EF /* ViewController.swift */,
-				0843C2652C2F0704000CD9EF /* Main.storyboard */,
+				0843C2AC2C2F8695000CD9EF /* Extensions */,
+				0843C2AB2C2F7775000CD9EF /* Cells */,
+				0843C2932C2F13F9000CD9EF /* NetworkManager */,
+				0843C28F2C2F1346000CD9EF /* Model */,
+				0843C2922C2F1369000CD9EF /* ViewModel */,
+				0843C2912C2F1355000CD9EF /* ViewController */,
+				0843C2902C2F134E000CD9EF /* View */,
+				0843C29A2C2F2C1D000CD9EF /* Common */,
 				0843C2682C2F0705000CD9EF /* Assets.xcassets */,
 				0843C26A2C2F0705000CD9EF /* LaunchScreen.storyboard */,
 				0843C26D2C2F0705000CD9EF /* Info.plist */,
@@ -127,6 +173,97 @@
 			path = BaraaTaskImagineUITests;
 			sourceTree = "<group>";
 		};
+		0843C28F2C2F1346000CD9EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0843C29F2C2F3E4D000CD9EF /* ItemsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0843C2902C2F134E000CD9EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0843C2652C2F0704000CD9EF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0843C2912C2F1355000CD9EF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0843C2962C2F1653000CD9EF /* HomeTabBarVC.swift */,
+				0843C2982C2F18B9000CD9EF /* HomeVC.swift */,
+				0843C29D2C2F3162000CD9EF /* FavouritsVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0843C2922C2F1369000CD9EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0843C2A32C2F5A41000CD9EF /* ItemsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0843C2932C2F13F9000CD9EF /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				0843C2942C2F141F000CD9EF /* NetworkManager.swift */,
+				0843C2A12C2F5422000CD9EF /* NetworkConstants.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		0843C29A2C2F2C1D000CD9EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0843C29B2C2F2C66000CD9EF /* StoryboardName.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0843C2AB2C2F7775000CD9EF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0843C2A72C2F776F000CD9EF /* ItemsListTableViewCell.swift */,
+				0843C2A82C2F776F000CD9EF /* ItemsListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0843C2AC2C2F8695000CD9EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0843C2AD2C2F86B2000CD9EF /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33957CDABCD12DA26EDEE5ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49F8B46B9164581CCF0967B1 /* libPods-BaraaTaskImagine.a */,
+				589DE82A9427C59AB7823CEE /* libPods-BaraaTaskImagine-BaraaTaskImagineUITests.a */,
+				4D80BA0A5C82D1DD3DDD5BEE /* libPods-BaraaTaskImagineTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		833A738D959C6A1E009E25AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED56937626654CB68BE263E9 /* Pods-BaraaTaskImagine.debug.xcconfig */,
+				FD6D4ADD7CEDA954879B0993 /* Pods-BaraaTaskImagine.release.xcconfig */,
+				68715988189E4C21AD57E8AD /* Pods-BaraaTaskImagine-BaraaTaskImagineUITests.debug.xcconfig */,
+				BD2047D9D91D1717F83D3424 /* Pods-BaraaTaskImagine-BaraaTaskImagineUITests.release.xcconfig */,
+				08F106427520BA023B7656B1 /* Pods-BaraaTaskImagineTests.debug.xcconfig */,
+				BFDA4167E69AF8CC489C78A5 /* Pods-BaraaTaskImagineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0843C2862C2F0705000CD9EF /* Build configuration list for PBXNativeTarget "BaraaTaskImagine" */;
 			buildPhases = (
+				7D2298F63C5D5D2153FE4D06 /* [CP] Check Pods Manifest.lock */,
 				0843C2582C2F0704000CD9EF /* Sources */,
 				0843C2592C2F0704000CD9EF /* Frameworks */,
 				0843C25A2C2F0704000CD9EF /* Resources */,
+				C54326918631182D5CECAB00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0843C2892C2F0705000CD9EF /* Build configuration list for PBXNativeTarget "BaraaTaskImagineTests" */;
 			buildPhases = (
+				7CD91E523A8E2AAF3361E207 /* [CP] Check Pods Manifest.lock */,
 				0843C26E2C2F0705000CD9EF /* Sources */,
 				0843C26F2C2F0705000CD9EF /* Frameworks */,
 				0843C2702C2F0705000CD9EF /* Resources */,
@@ -169,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0843C28C2C2F0705000CD9EF /* Build configuration list for PBXNativeTarget "BaraaTaskImagineUITests" */;
 			buildPhases = (
+				DE1A2CB1474755A689D95B4D /* [CP] Check Pods Manifest.lock */,
 				0843C2782C2F0705000CD9EF /* Sources */,
 				0843C2792C2F0705000CD9EF /* Frameworks */,
 				0843C27A2C2F0705000CD9EF /* Resources */,
+				55ECE6FDD127AB14A6D63DD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +357,9 @@
 				Base,
 			);
 			mainGroup = 0843C2532C2F0704000CD9EF;
+			packageReferences = (
+				088D950A2C30541B0042E0D1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 0843C25D2C2F0704000CD9EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0843C2AA2C2F776F000CD9EF /* ItemsListTableViewCell.xib in Resources */,
 				0843C26C2C2F0705000CD9EF /* LaunchScreen.storyboard in Resources */,
 				0843C2692C2F0705000CD9EF /* Assets.xcassets in Resources */,
 				0843C2672C2F0704000CD9EF /* Main.storyboard in Resources */,
@@ -253,14 +399,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55ECE6FDD127AB14A6D63DD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaraaTaskImagine-BaraaTaskImagineUITests/Pods-BaraaTaskImagine-BaraaTaskImagineUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaraaTaskImagine-BaraaTaskImagineUITests/Pods-BaraaTaskImagine-BaraaTaskImagineUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaraaTaskImagine-BaraaTaskImagineUITests/Pods-BaraaTaskImagine-BaraaTaskImagineUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD91E523A8E2AAF3361E207 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaraaTaskImagineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2298F63C5D5D2153FE4D06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaraaTaskImagine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54326918631182D5CECAB00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaraaTaskImagine/Pods-BaraaTaskImagine-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaraaTaskImagine/Pods-BaraaTaskImagine-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaraaTaskImagine/Pods-BaraaTaskImagine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE1A2CB1474755A689D95B4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaraaTaskImagine-BaraaTaskImagineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0843C2582C2F0704000CD9EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0843C2A92C2F776F000CD9EF /* ItemsListTableViewCell.swift in Sources */,
+				0843C29E2C2F3162000CD9EF /* FavouritsVC.swift in Sources */,
+				0843C2952C2F141F000CD9EF /* NetworkManager.swift in Sources */,
+				0843C2A22C2F5422000CD9EF /* NetworkConstants.swift in Sources */,
 				0843C2642C2F0704000CD9EF /* ViewController.swift in Sources */,
+				0843C29C2C2F2C66000CD9EF /* StoryboardName.swift in Sources */,
 				0843C2602C2F0704000CD9EF /* AppDelegate.swift in Sources */,
+				0843C2992C2F18B9000CD9EF /* HomeVC.swift in Sources */,
+				0843C2972C2F1653000CD9EF /* HomeTabBarVC.swift in Sources */,
+				0843C2A02C2F3E4D000CD9EF /* ItemsModel.swift in Sources */,
 				0843C2622C2F0704000CD9EF /* SceneDelegate.swift in Sources */,
+				0843C2A42C2F5A41000CD9EF /* ItemsViewModel.swift in Sources */,
+				0843C2AE2C2F86B2000CD9EF /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +696,14 @@
 		};
 		0843C2872C2F0705000CD9EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED56937626654CB68BE263E9 /* Pods-BaraaTaskImagine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5U38F3L3WU;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaraaTaskImagine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,12 +726,14 @@
 		};
 		0843C2882C2F0705000CD9EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6D4ADD7CEDA954879B0993 /* Pods-BaraaTaskImagine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5U38F3L3WU;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaraaTaskImagine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,6 +756,7 @@
 		};
 		0843C28A2C2F0705000CD9EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F106427520BA023B7656B1 /* Pods-BaraaTaskImagineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +777,7 @@
 		};
 		0843C28B2C2F0705000CD9EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDA4167E69AF8CC489C78A5 /* Pods-BaraaTaskImagineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +798,7 @@
 		};
 		0843C28D2C2F0705000CD9EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68715988189E4C21AD57E8AD /* Pods-BaraaTaskImagine-BaraaTaskImagineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +817,7 @@
 		};
 		0843C28E2C2F0705000CD9EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD2047D9D91D1717F83D3424 /* Pods-BaraaTaskImagine-BaraaTaskImagineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +874,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		088D950A2C30541B0042E0D1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 0843C2542C2F0704000CD9EF /* Project object */;
 }
