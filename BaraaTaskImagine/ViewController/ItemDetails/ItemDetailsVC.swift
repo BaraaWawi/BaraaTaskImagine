@@ -12,12 +12,10 @@ class ItemDetailsVC: UIViewController {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var typeLbl: UILabel!
-    @IBOutlet weak var slugLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
-    
-    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var addToFavBtn: UIButton!
     
+    @IBOutlet weak var slugLbl: UILabel!
     //MARK: - Variables
     var itemData : DataModel?
     
@@ -33,12 +31,15 @@ class ItemDetailsVC: UIViewController {
         updateFavoritesButton()
 
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: .shouldUpdateItems, object: nil)
+    }
+    
     //MARK: - ConfigureUI
     private func configureUI(){
         navigationItem.title = "Item Details"
         loadScreenData()
-        
-        
         
     }
     //MARK: - Methods
@@ -49,20 +50,7 @@ class ItemDetailsVC: UIViewController {
         slugLbl.text = itemData.slug
         descriptionLbl.text = itemData.alt_text
         imgView.sd_setImage(with: URL(string: itemData.images.original.url))
-        
-        
-    }
-    
-    @objc private func addToFavBtnPressed(){
-        guard let itemData = itemData else{return}
-        if FavoritesManagerDB.shared.isFavorite(item: itemData) {
-            FavoritesManagerDB.shared.removeFromFavorites(item: itemData)
-        } else {
-            FavoritesManagerDB.shared.saveToFavorites(item: itemData)
-        }
-        updateFavoritesButton()
-        
-        
+         
     }
     
     private func updateFavoritesButton() {
@@ -72,5 +60,17 @@ class ItemDetailsVC: UIViewController {
         
     }
     
-}
+    //MARK: - Selectors
+    @objc private func addToFavBtnPressed(){
+        guard let itemData = itemData else{return}
+        if FavoritesManagerDB.shared.isFavorite(item: itemData) {
+            FavoritesManagerDB.shared.removeFromFavorites(item: itemData)
+        } else {
+            FavoritesManagerDB.shared.saveToFavorites(item: itemData)
+        }
+        updateFavoritesButton()
+        
+    }
+    
+}//ItemDetailsVC
 

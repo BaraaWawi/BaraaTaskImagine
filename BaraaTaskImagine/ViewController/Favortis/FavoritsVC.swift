@@ -25,9 +25,10 @@ class FavoritsVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         favoritsArray = FavoritesManagerDB.shared.getFavorites()
-        
+       
     }
-    //Methods
+   
+    //MARK: - Setup UI
     private func setupTableView(){
         tableView.delegate = self
         tableView.dataSource = self
@@ -35,16 +36,23 @@ class FavoritsVC: UIViewController {
         tableView.separatorColor = .clear
         
     }
-    
+    //MARK: - Methods
+    private func updateHomeItemsList(){
+        NotificationCenter.default.post(name: .shouldUpdateItems, object: nil)
+        print("post added in HomeViewController")
+
+    }
     
 }//end FavoritsVC
+
+//MARK: - UITableViewDelegate & Datasource
 
 extension FavoritsVC : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if favoritsArray.count == 0{
-            tableView.setNoRecordsMessage("No Favorits yet")
+            tableView.setNoNoDataMessage("No Favorits yet")
         }else{
-            tableView.removeNoRecordsMessage()
+            tableView.removeNoNoDataMessage()
         }
         return favoritsArray.count
     }
@@ -74,7 +82,6 @@ extension FavoritsVC : UITableViewDelegate , UITableViewDataSource {
             
             headerView.addSubview(headerLabel)
             
-            // Center the label within the header view
             NSLayoutConstraint.activate([
                 headerLabel.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
                 headerLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
@@ -86,17 +93,19 @@ extension FavoritsVC : UITableViewDelegate , UITableViewDataSource {
         }
         
         func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            // Return the height for the header view
+
             return 50
         }
     
-}//end FavoritsVC
+}//end UITableViewDelegate & Datasource
 
+//MARK: - AddRemoveFromFavDelegate
 extension FavoritsVC : AddRemoveFromFavDelegate{
     func addRemoveItemFromFav(_ item: DataModel) {
         FavoritesManagerDB.shared.removeFromFavorites(item: item)
         favoritsArray = FavoritesManagerDB.shared.getFavorites()
         tableView.reloadData()
+        updateHomeItemsList()
     }
     
     

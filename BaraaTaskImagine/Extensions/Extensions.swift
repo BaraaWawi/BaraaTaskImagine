@@ -19,17 +19,49 @@ extension UIImageView {
             }
         }
     }
+   
 }
 
 extension UIView {
-    func addCornerRadius(radius : CGFloat = 8){
-        layer.cornerRadius = radius
-        layer.masksToBounds = true
-    }
-    
+
     func circle() {
         layer.cornerRadius = frame.size.height / 2
         layer.masksToBounds = true
     }
     
 }
+
+extension UITableView {
+    
+    func setNoNoDataMessage(_ label: String) {
+        
+        let noNoDataLabel = UILabel()
+        noNoDataLabel.text = label
+        noNoDataLabel.textColor = .gray
+        noNoDataLabel.textAlignment = .center
+        
+        let labelContainer = UIView(frame: CGRect(x: 0,
+                                                  y: 0,
+                                                  width: self.bounds.size.width,
+                                                  height: self.bounds.size.height))
+        labelContainer.addSubview(noNoDataLabel)
+        
+        noNoDataLabel.translatesAutoresizingMaskIntoConstraints = false
+        noNoDataLabel.centerXAnchor.constraint(equalTo: labelContainer.centerXAnchor).isActive = true
+        noNoDataLabel.centerYAnchor.constraint(equalTo: labelContainer.centerYAnchor).isActive = true
+        
+        self.backgroundView = labelContainer
+        self.separatorStyle = .none
+    }
+    
+    @objc func removeNoNoDataMessage() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
+
+}
+
+extension Notification.Name{
+    static let shouldUpdateItems = Notification.Name("updateItems")
+}
+

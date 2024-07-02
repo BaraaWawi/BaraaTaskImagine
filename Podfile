@@ -2,9 +2,8 @@
 # platform :ios, '9.0'
 
 target 'BaraaTaskImagine' do
- 
- pod 'SDWebImage', '~> 5.0'
 
+  pod 'SDWebImage', :modular_headers => true
   target 'BaraaTaskImagineTests' do
     inherit! :search_paths
     # Pods for testing
@@ -14,4 +13,6 @@ target 'BaraaTaskImagine' do
     # Pods for testing
   end
 
+
+  
 end

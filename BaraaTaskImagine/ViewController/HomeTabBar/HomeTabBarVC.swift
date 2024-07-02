@@ -27,7 +27,7 @@ class HomeTabBarVC: UITabBarController {
         let favController = StoryboardName.mainSb.storyBoard.instantiateViewController(withIdentifier: "FavoritsVC")
         
         let favNav = createNav(with: "Favorits", withImage: UIImage(systemName: "star.circle.fill"), vc: favController)
-        //Favorits Tab Bar
+
         setViewControllers([homeNav,favNav], animated: true)
     }
 

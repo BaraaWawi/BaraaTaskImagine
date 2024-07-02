@@ -22,10 +22,10 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupTableView()
         setupSearchBar()
+        setupNotificationCenter()
         getData()
-        
     }
-    
+   
     //MARK: - Setup UI
     private func setupTableView(){
         tableView.delegate = self
@@ -38,8 +38,22 @@ class HomeVC: UIViewController {
         searchBar.placeholder = "Search"
     }
     
+    private func setupNotificationCenter(){
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTableView), name: .shouldUpdateItems, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .shouldUpdateItems, object: nil)
+    }
+    
+    //MARK: - Methods
+    @objc private func updateTableView(){
+        tableView.reloadData()
+
+    }
     //MARK: - Api Calling
-    private func getData(){
+   @objc private func getData(){
+       
         itemsViewModel.getItemsList()//call api
         
         //load api resp
@@ -59,13 +73,22 @@ class HomeVC: UIViewController {
 //MARK: - UITableView Delegate & Datasource
 extension HomeVC : UITableViewDelegate , UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items?.data.count ?? 0
+        
+        guard let items = items?.data.count else{
+            tableView.setNoNoDataMessage("No items found")
+            return 0
+        }
+        tableView.removeNoNoDataMessage()
+        return items
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemsListTableViewCell.cellID, for: indexPath) as? ItemsListTableViewCell else{return UITableViewCell()}
-        
-        cell.itemData = items?.data[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemsListTableViewCell.cellID, for: indexPath) as? ItemsListTableViewCell ,let items else{return UITableViewCell()}
+      
+        cell.isItemInFav = FavoritesManagerDB.shared.isFavorite(item: items.data[indexPath.row])
+        cell.itemData = items.data[indexPath.row]
+        cell.delegate = self
         return cell
     }
     
@@ -90,6 +113,17 @@ extension HomeVC : UITableViewDelegate , UITableViewDataSource{
      }
 }
 
+//MARK: - AddRemoveFromFavDelegate
+extension HomeVC : AddRemoveFromFavDelegate {
+    func addRemoveItemFromFav(_ item: DataModel) {
+        if FavoritesManagerDB.shared.isFavorite(item: item){
+            FavoritesManagerDB.shared.removeFromFavorites(item: item)
+        }else{
+            FavoritesManagerDB.shared.saveToFavorites(item: item)
+        }
+        tableView.reloadData()
+    }
+}
 //MARK: - UISearchbar Delegate
 extension HomeVC : UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

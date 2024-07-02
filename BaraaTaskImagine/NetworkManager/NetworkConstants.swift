@@ -10,7 +10,9 @@ import Foundation
 struct NetworkConstants{
     
     static let apiKey = "Es5AFOTRPQATlrN5vu1lqvD3ok5H4qLV"
-    static let categories = "https://api.giphy.com/v1/gifs/categories?api_key="
+//    static let categories = "https://api.giphy.com/v1/gifs/categories?api_key="
+    static let trending = "https://api.giphy.com/v1/gifs/trending?api_key="
+    static let search = "https://api.giphy.com/v1/gifs/search?api_key="
     
 }
 

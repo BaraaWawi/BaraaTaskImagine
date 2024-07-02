@@ -129,7 +129,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v3j-kw-zFx">
                                                                 <rect key="frame" x="0.0" y="138.66666666666663" width="41.333333333333336" height="49.333333333333343"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-i8-Djb">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-i8-Djb">
                                                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="21"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="21" id="IZc-sE-H6U"/>
@@ -220,7 +220,7 @@
                         <outlet property="addToFavBtn" destination="95a-xY-iuv" id="nCW-sp-k49"/>
                         <outlet property="descriptionLbl" destination="8yi-0h-QE1" id="Ynb-eX-SGF"/>
                         <outlet property="imgView" destination="7dw-wE-T19" id="vhe-oG-CEN"/>
-                        <outlet property="slugLbl" destination="hxl-U7-M9f" id="Oid-B5-Vm2"/>
+                        <outlet property="slugLbl" destination="hxl-U7-M9f" id="fnI-oH-Yng"/>
                         <outlet property="titleLbl" destination="bQ6-57-2No" id="Qes-lW-8NE"/>
                         <outlet property="typeLbl" destination="yeP-vS-vGA" id="Jwk-CI-G3E"/>
                     </connections>
