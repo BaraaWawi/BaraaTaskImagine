@@ -39,6 +39,7 @@ class ItemsListTableViewCell: UITableViewCell {
         setupfavBtn()
        
     }
+    //MARK: - setupUI
     private func setupfavBtn(){
         itemImgView.circle()
         addRemoveFavBtn.addTarget(self, action: #selector(removeFavBtnPressed), for: .touchUpInside)
@@ -63,7 +64,7 @@ class ItemsListTableViewCell: UITableViewCell {
     private func loadCell(){
        customizeFavBtn()
         guard let itemData = itemData else{return}
-//        print("itemData = \(itemData)")
+        print("itemData = \(itemData)")
         itemTitleLbl.text = itemData.title
         itemDescLbl.text = itemData.alt_text
         

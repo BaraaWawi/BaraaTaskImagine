@@ -27,7 +27,6 @@
 		0843C2A92C2F776F000CD9EF /* ItemsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2A72C2F776F000CD9EF /* ItemsListTableViewCell.swift */; };
 		0843C2AA2C2F776F000CD9EF /* ItemsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843C2A82C2F776F000CD9EF /* ItemsListTableViewCell.xib */; };
 		0843C2AE2C2F86B2000CD9EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843C2AD2C2F86B2000CD9EF /* Extensions.swift */; };
-		08E42EFC2C3070CA005F37F0 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E42EFB2C3070CA005F37F0 /* FavoritesManager.swift */; };
 		08E42F042C309F43005F37F0 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E42F032C309F43005F37F0 /* RealmManager.swift */; };
 		08E42F072C30A0DC005F37F0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 08E42F062C30A0DC005F37F0 /* RealmSwift */; };
 		08E42F092C30A25B005F37F0 /* FavoritsManagerDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E42F082C30A25B005F37F0 /* FavoritsManagerDB.swift */; };
@@ -78,7 +77,6 @@
 		0843C2A72C2F776F000CD9EF /* ItemsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListTableViewCell.swift; sourceTree = "<group>"; };
 		0843C2A82C2F776F000CD9EF /* ItemsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsListTableViewCell.xib; sourceTree = "<group>"; };
 		0843C2AD2C2F86B2000CD9EF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		08E42EFB2C3070CA005F37F0 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		08E42F032C309F43005F37F0 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		08E42F082C30A25B005F37F0 /* FavoritsManagerDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritsManagerDB.swift; sourceTree = "<group>"; };
 		08F106427520BA023B7656B1 /* Pods-BaraaTaskImagineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaraaTaskImagineTests.debug.xcconfig"; path = "Target Support Files/Pods-BaraaTaskImagineTests/Pods-BaraaTaskImagineTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				0843C2612C2F0704000CD9EF /* SceneDelegate.swift */,
 				08E42EFD2C309B2C005F37F0 /* RealmManager */,
 				0843C2932C2F13F9000CD9EF /* NetworkManager */,
-				08E42EFA2C3070B4005F37F0 /* UserDefaultsManager */,
 				0843C28F2C2F1346000CD9EF /* Model */,
 				0843C2922C2F1369000CD9EF /* ViewModel */,
 				0843C2912C2F1355000CD9EF /* ViewController */,
@@ -159,7 +156,6 @@
 				0843C29A2C2F2C1D000CD9EF /* Common */,
 				0843C2AC2C2F8695000CD9EF /* Extensions */,
 				0843C2682C2F0705000CD9EF /* Assets.xcassets */,
-				0843C26A2C2F0705000CD9EF /* LaunchScreen.storyboard */,
 				0843C26D2C2F0705000CD9EF /* Info.plist */,
 			);
 			path = BaraaTaskImagine;
@@ -193,6 +189,7 @@
 		0843C2902C2F134E000CD9EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				088339B12C33D469008BC2DD /* LaunchScreen */,
 				08C11EDE2C32EE3F00820E01 /* MainSb */,
 			);
 			path = View;
@@ -251,6 +248,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		088339B12C33D469008BC2DD /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0843C26A2C2F0705000CD9EF /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		08C11EDA2C32EDF900820E01 /* Favortis */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,14 +302,6 @@
 				0843C2A32C2F5A41000CD9EF /* ItemsViewModel.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		08E42EFA2C3070B4005F37F0 /* UserDefaultsManager */ = {
-			isa = PBXGroup;
-			children = (
-				08E42EFB2C3070CA005F37F0 /* FavoritesManager.swift */,
-			);
-			path = UserDefaultsManager;
 			sourceTree = "<group>";
 		};
 		08E42EFD2C309B2C005F37F0 /* RealmManager */ = {
@@ -591,7 +588,6 @@
 				0843C29E2C2F3162000CD9EF /* FavoritsVC.swift in Sources */,
 				08E42F042C309F43005F37F0 /* RealmManager.swift in Sources */,
 				0843C2952C2F141F000CD9EF /* NetworkManager.swift in Sources */,
-				08E42EFC2C3070CA005F37F0 /* FavoritesManager.swift in Sources */,
 				0843C2A22C2F5422000CD9EF /* NetworkConstants.swift in Sources */,
 				0843C2642C2F0704000CD9EF /* ItemDetailsVC.swift in Sources */,
 				0843C29C2C2F2C66000CD9EF /* StoryboardName.swift in Sources */,
